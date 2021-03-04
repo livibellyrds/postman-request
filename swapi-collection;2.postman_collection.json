@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "8f3e3b05-7a16-4acc-8dd5-4fdf5a64efc1",
+		"name": "swapi-collection;2",
+		"description": "Exercício Campinas tech talents",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pessoas",
+			"item": [
+				{
+					"name": "pessoa1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-dev}}/people/10\n",
+							"host": [
+								"{{url-dev}}"
+							],
+							"path": [
+								"people",
+								"10\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pessoa2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/people/?search=Greedo\n",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"people",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Greedo\n"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pessoa3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/people/?search=Yoda\n",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"people",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Yoda\n"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "naves",
+			"item": [
+				{
+					"name": "nave1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-dev}}/starships/9/",
+							"host": [
+								"{{url-dev}}"
+							],
+							"path": [
+								"starships",
+								"9",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nave2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/starships/?search=X-wing\n",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"starships",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "X-wing\n"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nave3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-dev}}/starships/5/",
+							"host": [
+								"{{url-dev}}"
+							],
+							"path": [
+								"starships",
+								"5",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Planeta",
+			"item": [
+				{
+					"name": "planeta1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "swapi.dev/api/planets/1/\n",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets",
+								"1",
+								"\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "planeta2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/planets/?search=Hoth\n",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Hoth\n"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "planeta3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url-dev",
+			"value": "https://swapi.dev/api"
+		}
+	]
+}
